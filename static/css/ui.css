@@ -20,8 +20,7 @@ a:hover {
   display: block;
 }
 .img-wrap img {
-  min-width: 100%;
-  max-width: 100%;
+  width: 100%;
 }
 
 .icon-wrap {

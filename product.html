@@ -159,61 +159,159 @@ $(document).ready(function() {
 
   
 
-<section class="section-content padding-y min-vh-100">
 
-<!-- ============================ COMPONENT REGISTER   ================================= -->
-<div class="card mx-auto" style="max-width:520px; margin-top:40px;">
-  <article class="card-body">
-    
+<section class="section-content padding-y bg">
+	<div class="container">
 
-    <header class="mb-4">
-      <h4 class="card-title">Sign up</h4>
-    </header>
-    <form action="/accounts/register/" method="POST">
-      <input type="hidden" name="csrfmiddlewaretoken" value="xbL5PAbWhthvLGg3VeRTuDHRGyzv6kECFC72r3DAsZmaH0xXHwEU4nkk7tGgSKkL">
+		<!-- ============================ COMPONENT 1 ================================= -->
+		<div class="card">
+			<div class="row no-gutters">
+				<aside class="col-md-6">
+				  <article class="gallery-wrap">
+				    <div class="img-big-wrap mainImage">
+							<center><img src="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/E/X/180403_1663256031.jpg" alt="Product Image" class="w-100"></center>
+				    </div> <!-- img-big-wrap.// -->
 
-      <div class="form-row">
-        <div class="col form-group">
-          <label>First Name</label>
-          <input type="text" name="first_name" maxlength="50" placeholder="Enter First Name" class="form-control" required id="id_first_name">
-        </div> <!-- form-group end.// -->
-        <div class="col form-group">
-          <label>Last Name</label>
-          <input type="text" name="last_name" maxlength="50" placeholder="Enter Last Name" class="form-control" required id="id_last_name">
-        </div> <!-- form-group end.// -->
-      </div> <!-- form-row end.// -->
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label>Email Address</label>
-          <input type="email" name="email" maxlength="50" placeholder="Enter Email Address" class="form-control" required id="id_email">
-          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div> <!-- form-group end.// -->
-        <div class="form-group col-md-6">
-          <label>Phone Number</label>
-          <input type="text" name="phone_number" maxlength="50" placeholder="Enter Phone Number" class="form-control" required id="id_phone_number">
-        </div> <!-- form-group end.// -->
-      </div> <!-- form-row.// -->
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label>Create Password</label>
-          <input type="password" name="password" placeholder="Enter Password" class="form-control" required id="id_password">
-        </div> <!-- form-group end.// -->
-        <div class="form-group col-md-6">
-          <label>Repeat Password</label>
-          <input type="password" name="confirm_password" placeholder="Confirm Password" class="form-control" required id="id_confirm_password">
-        </div> <!-- form-group end.// -->
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block">Register</button>
-      </div> <!-- form-group// -->
-    
-    
-    </form>
-  </article><!-- card-body.// -->
-</div> <!-- card .// -->
-<p class="text-center mt-4">Already have an account? <a href="login.html">Log In</a></p>
-<br><br>
-<!-- ============================ COMPONENT REGISTER  END.// ================================= -->
+				  </article> <!-- gallery-wrap .end// -->
+					<ul class="thumb">
+						<li>
+							<a href="/media/photos/products/il_794xN.2643730203_pjok.jpg" target="mainImage"><img src="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/E/X/180403_1663256031.jpg" alt="Product Image"></a>
+							
+							<a href="/media/store/products/il_794xN.2643698845_fq6x.jpg" target="mainImage"><img src="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/E/X/180403_1663256031.jpg" alt="Product Image"></a>
+							
+							<a href="/media/store/products/il_794xN.2643651249_cdni.jpg" target="mainImage"><img src="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/E/X/180403_1663256031.jpg" alt="Product Image"></a>
+							
+						</li>
+					</ul>
+					</aside>
+				<main class="col-md-6 border-left">
+
+					<form action="/cart/add_cart/8/" method="POST">
+						<input type="hidden" name="csrfmiddlewaretoken" value="YbJSgPqth7lebQh4t2bHlnAyKDncAtbJ6C5PSiS7sDqT7ayYfkYIV7d1byuXmTRS">
+						<article class="content-body">
+
+							<h2 class="title">Product 02</h2>
+							<div class="rating-star">
+								<span>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+	<span>0 reviews</span>
+									</span>
+							</div>
+
+
+							<div class="mb-3">
+								<var class="price h4">£33</var>
+							</div>
+
+							<p>product 02</p>
+
+
+							<hr>
+							<div class="row">
+								<div class="item-option-select">
+									<h6>Choose Color</h6>
+									<select name="color" class="form-control" required>
+										<option value="" disabled selected>Select</option>
+										
+										<option value="green">Green</option>
+										
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="item-option-select">
+									<h6>Select Size</h6>
+									<select name="size" class="form-control">
+										<option value="" disabled selected>Select</option>
+										
+										<option value="xxl">XXL</option>
+										
+										<option value="m">M</option>
+										
+									</select>
+								</div>
+							</div>
+							<hr>
+							
+							<button type="submit" class="btn  btn-primary"> <span class="text">Add to Cart</span> <i class="fas fa-shopping-cart"></i> </button>
+							
+						</article> <!-- product-info-aside .// -->
+					</form>
+				</main> <!-- col.// -->
+			</div> <!-- row.// -->
+		</div> <!-- card.// -->
+		<!-- ============================ COMPONENT 1 END .// ================================= -->
+
+		<br>
+
+		<div class="row">
+			<div class="col-md-9">
+
+
+
+				<form action="/store/submit_review/8/" method="POST">
+					<input type="hidden" name="csrfmiddlewaretoken" value="YbJSgPqth7lebQh4t2bHlnAyKDncAtbJ6C5PSiS7sDqT7ayYfkYIV7d1byuXmTRS">
+					<h5>Write Your Review</h5>
+
+					<div>
+						<!-- Rating stars -->
+						<label>How do you rate this product?</label>
+						<br>
+						<div class="rate">
+							<input type="radio" name="rating" id="rating10" value="5" required /><label for="rating10" title="5"></label>
+							<input type="radio" name="rating" id="rating9" value="4.5" required /><label for="rating9" title="4.5" class="half"></label>
+							<input type="radio" name="rating" id="rating8" value="4" required /><label for="rating8" title="4"></label>
+							<input type="radio" name="rating" id="rating7" value="3.5" required /><label for="rating7" title="3.5" class="half"></label>
+							<input type="radio" name="rating" id="rating6" value="3" required /><label for="rating6" title="3"></label>
+							<input type="radio" name="rating" id="rating5" value="2.5" required /><label for="rating5" title="2.5" class="half"></label>
+							<input type="radio" name="rating" id="rating4" value="2" required /><label for="rating4" title="2"></label>
+							<input type="radio" name="rating" id="rating3" value="1.5" required /><label for="rating3" title="1.5" class="half"></label>
+							<input type="radio" name="rating" id="rating2" value="1" required /><label for="rating2" title="1"></label>
+							<input type="radio" name="rating" id="rating1" value="0.5" required /><label for="rating1" title="0.5" class="half"></label>
+						</div>
+<br>
+						Review Title:
+						<input type="text" class="form-control" name="subject">
+						<br>
+						Review:
+						<textarea name="review" rows="4" class="form-control"></textarea>
+						<br>
+						
+						<p>You must be logged in to post a review. <span><a href="/accounts/login/">Login now</a></span></p>
+						
+
+					</div>
+
+
+				</form>
+<br>
+<header class="section-heading">
+	<h3>Customer Reviews </h3>
+	<div class="rating-star">
+		<span>
+			<i class="fa fa-star-o" aria-hidden="true"></i>
+			<i class="fa fa-star-o" aria-hidden="true"></i>
+			<i class="fa fa-star-o" aria-hidden="true"></i>
+			<i class="fa fa-star-o" aria-hidden="true"></i>
+			<i class="fa fa-star-o" aria-hidden="true"></i>
+	<span>0 reviews</span>
+			</span>
+	</div>
+
+</header>
+
+
+
+
+			</div> <!-- col.// -->
+		</div> <!-- row.// -->
+
+
+	</div> <!-- container .//  -->
 </section>
 <!-- ========================= SECTION CONTENT END// ========================= -->
 
